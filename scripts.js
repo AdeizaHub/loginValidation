@@ -1,6 +1,20 @@
 // username && password validation
 function validate(event) {
   event.preventDefault();
+ var getUsername = document.querySelector("#Username").value;
+  var getPassword = document.querySelector("#Password").value;
+
+  if (getUsername === "") {
+    alert("Enter Username!!");
+    return;
+  }
+  if (getPassword === "") {
+    alert("Enter Password");
+    return;
+  }
+  alert("Login Successful!!");
+}
+
 
   function show() {
     var p = document.getElementById("password");
@@ -28,16 +42,4 @@ function validate(event) {
     false
   );
 
-  var getUsername = document.querySelector("#Username").value;
-  var getPassword = document.querySelector("#Password").value;
-
-  if (getUsername === "") {
-    alert("Enter Username!!");
-    return;
-  }
-  if (getPassword === "") {
-    alert("Enter Password");
-    return;
-  }
-  alert("Login Successful!!");
-}
+ 
